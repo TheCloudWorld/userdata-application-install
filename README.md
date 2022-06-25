@@ -1,2 +1,2 @@
-# application-jenkins-install-userdata
-application-jenkins-install-userdata
+# application-install-userdata
+application-install-userdata
