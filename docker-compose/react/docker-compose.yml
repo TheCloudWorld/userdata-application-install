@@ -1,0 +1,10 @@
+services:
+  employee-frontend:
+    image: thecloudworld/employee-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_GET=http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:5000/api/v1/employees
+      - REACT_APP_POST="http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:9000/api/v1/employees"
+      - REACT_APP_PUT="http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:7000/api/v1/employees"
+      - REACT_APP_DELETE="http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:8000/api/v1/employees"
