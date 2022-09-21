@@ -1,0 +1,44 @@
+services:
+  frontend:
+    build: ./frontend
+    image: thecloudworld/frontend
+    platform: linux/amd64
+    ports:
+      - "5005:5005"
+    environment:
+      - PRODUCT=localhost
+      - USER=localhost
+      - COUNT=localhost
+
+  product:
+    build: ./product
+    image: thecloudworld/product
+    platform: linux/amd64
+    ports:
+      - "4000:4000"
+    environment:
+      - API=localhost
+
+  user:
+    build: ./user
+    image: thecloudworld/user
+    platform: linux/amd64
+    ports:
+      - "6000:6000"
+    environment:
+      - API=localhost
+
+  data:
+    build: ./data
+    image: thecloudworld/data
+    ports:
+      - "8000:8000"
+
+  count:
+    build: ./count
+    image: thecloudworld/count
+    ports:
+      - "11000:11000"
+
+  redis:
+    image: redis
