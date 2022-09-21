@@ -1,0 +1,52 @@
+# version is now using "compose spec"
+# v2 and v3 are now combined!
+# docker-compose v1.27+ required
+
+services:
+  # employee-frontend:
+  #   build: ./react-frontend
+  #   image: thecloudworld/employee-frontend
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - REACT_APP_GET=http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:5000/api/v1/employees
+  #     - REACT_APP_POST="http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:9000/api/v1/employees"
+  #     - REACT_APP_PUT="http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:7000/api/v1/employees"
+  #     - REACT_APP_DELETE="http://internal-project-backend-1489604110.us-east-1.elb.amazonaws.com:8000/api/v1/employees"
+    # networks:
+    #   - net
+
+  get-api:
+    #build: ./springboot-backend-get
+    image: thecloudworld/employee-get-api
+    ports:
+      - "5000:5000"
+    # networks:
+    #   - net
+
+  post-api:
+   # build: ./springboot-backend-post
+    image: thecloudworld/employee-post-api
+    ports:
+      - "9000:9000"
+    # networks:
+    #   - net
+
+  put-api:
+    #build: ./springboot-backend-put
+    image: thecloudworld/employee-put-api
+    ports:
+      - "7000:7000"
+    # networks:
+    #   - net
+
+  delete-api:
+    #build: ./springboot-backend-delete
+    image: thecloudworld/employee-delete-api
+    ports:
+     - "8000:8000"
+    # networks:
+    #   - net
+
+# # networks:
+# #   net:
