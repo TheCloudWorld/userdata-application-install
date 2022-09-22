@@ -1,0 +1,6 @@
+services:
+  divide:
+    #build: ./divide
+    image: thecloudworld/divide
+    ports:
+      - "10000:10000"
