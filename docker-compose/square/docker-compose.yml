@@ -1,0 +1,6 @@
+services:
+  square:
+    #build: ./square
+    image: thecloudworld/square
+    ports:
+      - "7000:7000"
