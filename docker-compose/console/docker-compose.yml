@@ -1,0 +1,5 @@
+services:
+  console:
+    image: thecloudworld/console
+    ports:
+    - "80:80"
