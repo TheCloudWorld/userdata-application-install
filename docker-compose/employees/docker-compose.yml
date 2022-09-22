@@ -1,0 +1,6 @@
+services:
+  employee:
+    #build: ./employees
+    image: thecloudworld/employee
+    ports:
+      - "11000:11000"
