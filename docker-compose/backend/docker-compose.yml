@@ -1,0 +1,51 @@
+services:
+  square:
+    #build: ./square
+    image: thecloudworld/square
+    ports:
+      - "7000:7000"
+    #networks:
+    #  test:
+    #    ipv4_address: 172.20.0.3
+  
+  addition:
+    #build: ./addition
+    image: thecloudworld/addition
+    ports:
+      - "8000:8000"
+    #networks:
+    #  test:
+    #    ipv4_address: 172.20.0.4
+        
+  multiply:
+    #build: ./multiply
+    image: thecloudworld/multiply
+    ports:
+      - "9000:9000"
+    #networks:
+    #  test:
+    #    ipv4_address: 172.20.0.5
+  
+  divide:
+    #build: ./divide
+    image: thecloudworld/divide
+    ports:
+      - "10000:10000"
+    #networks:
+    #  test:
+    #    ipv4_address: 172.20.0.6
+
+  employee:
+    #build: ./employees
+    image: thecloudworld/employee
+    ports:
+      - "11000:11000"
+    #networks:
+    #  test:
+    #    ipv4_address: 172.20.0.7
+
+# networks:
+#   test:
+#     ipam:
+#       config:
+#         - subnet: 172.20.0.0/24
