@@ -1,0 +1,5 @@
+services:
+  api:
+    image: thecloudworld/api
+    ports:
+    - "5000:5000"
