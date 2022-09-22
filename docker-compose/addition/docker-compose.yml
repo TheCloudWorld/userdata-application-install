@@ -1,0 +1,6 @@
+services:
+  addition:
+    #build: ./addition
+    image: thecloudworld/addition
+    ports:
+      - "8000:8000"
