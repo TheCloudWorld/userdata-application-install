@@ -1,0 +1,7 @@
+services:
+  multiply:
+    #build: ./multiply
+    image: thecloudworld/multiply
+    ports:
+      - "9000:9000"
+   
