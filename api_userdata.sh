@@ -9,5 +9,5 @@ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 cd /home/ec2-user
 git clone https://github.com/TheCloudWorld/userdata-application-install.git
-cd userdata-application-install/docker-compose/console
+cd userdata-application-install/docker-compose/api
 docker-compose up -d
