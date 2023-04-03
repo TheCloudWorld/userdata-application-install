@@ -5,10 +5,10 @@ This repository contains the user data for ec2 instance to launch the particular
 ## Types
 
 
-| Application| Description                |
-| :--------  | :------------------------- |
-| `jenkins` | Installs java 11 & jenkins |
-| `docker` | Install docker |
+| Application| Description                | OS Type |
+| :--------  | :------------------------- | :-------|
+| `jenkins` | Installs java 11 & jenkins | Amazon Linux 2 / 2023 |
+| `docker` | Install docker | Amazon Linux 2 |
 
 
 
